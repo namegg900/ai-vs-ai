@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Debat AI vs AI</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="hero">
+        <h1>Debat AI vs AI</h1>
+        <p>Dua persona AI debat non-stop sampai kamu klik berhenti.</p>
+      </header>
+
+      <section class="panel controls">
+        <label>
+          Topik
+          <input id="topic" placeholder="Contoh: Mie Goreng vs Mie Kuah" maxlength="140" />
+        </label>
+        <div class="row">
+          <label>
+            Tim A
+            <input id="proName" value="Mie Goreng" maxlength="30" />
+          </label>
+          <label>
+            Tim B
+            <input id="conName" value="Mie Kuah" maxlength="30" />
+          </label>
+        </div>
+        <div class="actions">
+          <button id="startBtn" class="btn primary">Mulai Debat</button>
+          <button id="stopBtn" class="btn" disabled>Stop</button>
+        </div>
+      </section>
+
+      <section class="panel vote">
+        <h2>Vote Pemenang</h2>
+        <div class="vote-row">
+          <button class="btn vote-btn" id="voteA">Vote Tim A</button>
+          <button class="btn vote-btn" id="voteB">Vote Tim B</button>
+        </div>
+        <p id="voteResult">Belum ada vote.</p>
+      </section>
+
+      <section class="panel feed">
+        <h2>Live Debat</h2>
+        <div id="messages" class="messages"></div>
+      </section>
+    </main>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
