@@ -1,0 +1,16 @@
+{
+  "name": "ai-vs-ai",
+  "version": "1.0.0",
+  "description": "Debat AI vs AI realtime",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "check": "node --check server.js"
+  },
+  "dependencies": {
+    "axios": "^1.8.2",
+    "express": "^4.21.2",
+    "openpgp": "^5.11.3"
+  }
+}
